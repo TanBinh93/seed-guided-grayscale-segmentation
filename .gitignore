@@ -1,4 +1,4 @@
-# Python
+# Python cache and environments
 __pycache__/
 *.py[cod]
 *.pyo
@@ -9,20 +9,19 @@ __pycache__/
 venv/
 env/
 
-# IDE / OS
+# IDE and OS files
 .vscode/
 .idea/
 .DS_Store
 Thumbs.db
 
-# Raw data and generated analysis outputs
-Analyse/
+# Local data and generated outputs
+data/
+raw_data/
 outputs/
 outputs_*/
-1_BKG/
-2_REF/
-3_IMG/
-Segmentation_code_V1/
+results/
+results_*/
 *.tif
 *.tiff
 *.png
@@ -34,22 +33,7 @@ Segmentation_code_V1/
 *.h5
 *.hdf5
 
-# Local acquisition / configuration files
-*.dll
-params.txt
-minimage_IMG.tif
-*_WORKFLOW_NOTES.md
-Analyse.py
-Core_V06.dll
-Correct_BF.py
-Create_Msf_Intensity_Volume.py
-Crop_Rotate_Analyse_Images.py
-Show_plt_scatter.py
+# Keep this repository focused on the public example scripts
 *.py
-
-# Keep repository source files trackable
-!README.md
-!requirements.txt
-!.gitignore
 !Select_Seed_Points.py
 !Segmentation_.py
