@@ -17,6 +17,8 @@ Thumbs.db
 
 # Raw data and generated analysis outputs
 Analyse/
+outputs/
+outputs_*/
 1_BKG/
 2_REF/
 3_IMG/

@@ -16,18 +16,17 @@ README.md
 
 ## Expected Input Structure
 
-Place an input grayscale image in the following structure:
+Place an input grayscale image in the repository folder:
 
 ```text
 project_folder/
-└── Analyse/
-    └── IMG.tif
+└── image.tif
 ```
 
 The default scripts expect:
 
 ```text
-Analyse/IMG.tif
+image.tif
 ```
 
 You can change the file paths and ROI parameters directly in the parameter section near the bottom of each script.
@@ -43,7 +42,7 @@ python Select_Seed_Points.py
 This creates a seed-point CSV file and preview images in:
 
 ```text
-Analyse/Classical_methods/Segmentation_output/
+outputs/
 ```
 
 2. Run the segmentation pipeline:

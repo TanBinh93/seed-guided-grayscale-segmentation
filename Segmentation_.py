@@ -3,11 +3,11 @@
 Seed-guided segmentation of small bright objects in a grayscale image.
 
 Default outputs:
-  Analyse/Classical_methods/Segmentation_output/output_coordinates.csv
-  Analyse/Classical_methods/Segmentation_output/output_mask.tif
-  Analyse/Classical_methods/Segmentation_output/output_labels.tif
-  Analyse/Classical_methods/Segmentation_output/output_overlay.png
-  Analyse/Classical_methods/Segmentation_output/output_object_intensity_summary.csv
+  outputs/output_coordinates.csv
+  outputs/output_mask.tif
+  outputs/output_labels.tif
+  outputs/output_overlay.png
+  outputs/output_object_intensity_summary.csv
 
 Coordinates: x = column, y = row, origin at the top-left corner of the image.
 """
@@ -881,8 +881,8 @@ if __name__ == "__main__":
     # These are not universal constants: check output_overlay.png and tune if needed.
     MODE_CONFIGS = {
         "absorption": {
-            "input_file": "Analyse/IMG.tif",
-            "output_folder": "Analyse/Classical_methods/Segmentation_output",
+            "input_file": "image.tif",
+            "output_folder": "outputs",
             "preprocess_mode": "none",
             "score_mode": "bright",
             "roi": (370, 260, 180, 178),
@@ -892,14 +892,14 @@ if __name__ == "__main__":
             "ridge_weight": 0.0,
             "ignore_bottom_pixels": 0,
             "max_eccentricity": 0.88,
-            "seed_points_file": "Analyse/Classical_methods/Segmentation_output/output_seed_points.csv",
-            "absorption_intensity_file": "Analyse/IMG.tif",
-            "darkfield_intensity_file": "Analyse/IMG.tif",
-            "phase_intensity_file": "Analyse/IMG.tif",
+            "seed_points_file": "outputs/output_seed_points.csv",
+            "absorption_intensity_file": "image.tif",
+            "darkfield_intensity_file": "image.tif",
+            "phase_intensity_file": "image.tif",
         },
         "dark-field": {
-            "input_file": "Analyse/sc_1.tif",
-            "output_folder": "Analyse/Classical_methods/Segmentation_output_darkfield",
+            "input_file": "image.tif",
+            "output_folder": "outputs_darkfield",
             "preprocess_mode": "none",
             "score_mode": "bright",
             "roi": (370, 260, 180, 178),
@@ -910,13 +910,13 @@ if __name__ == "__main__":
             "ignore_bottom_pixels": 8,
             "max_eccentricity": 0.98,
             "seed_points_file": None,
-            "absorption_intensity_file": "Analyse/ab_1.tif",
-            "darkfield_intensity_file": "Analyse/sc_1.tif",
-            "phase_intensity_file": "Analyse/ph_2_cor.tif",
+            "absorption_intensity_file": "image.tif",
+            "darkfield_intensity_file": "image.tif",
+            "phase_intensity_file": "image.tif",
         },
         "phase-contrast": {
-            "input_file": "Analyse/ph_2_cor.tif",
-            "output_folder": "Analyse/Classical_methods/Segmentation_output_phase",
+            "input_file": "image.tif",
+            "output_folder": "outputs_phase",
             "preprocess_mode": "phase_contrast_enhanced",
             "score_mode": "phase_absolute",
             "roi": (410, 300, 130, 110),
@@ -927,9 +927,9 @@ if __name__ == "__main__":
             "ignore_bottom_pixels": 8,
             "max_eccentricity": 0.99,
             "seed_points_file": None,
-            "absorption_intensity_file": "Analyse/ab_1.tif",
-            "darkfield_intensity_file": "Analyse/sc_1.tif",
-            "phase_intensity_file": "Analyse/ph_2_cor.tif",
+            "absorption_intensity_file": "image.tif",
+            "darkfield_intensity_file": "image.tif",
+            "phase_intensity_file": "image.tif",
         },
     }
 

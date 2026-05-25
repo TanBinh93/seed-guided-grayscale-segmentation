@@ -11,8 +11,8 @@ In the matplotlib window:
   - Close the window if you want to cancel.
 
 Outputs:
-  Analyse/Classical_methods/Segmentation_output/output_seed_points.csv
-  Analyse/Classical_methods/Segmentation_output/output_seed_points_preview.png
+  outputs/output_seed_points.csv
+  outputs/output_seed_points_preview.png
 """
 
 from __future__ import annotations
@@ -27,8 +27,8 @@ import tifffile as tiff
 from Segmentation_ import clip_roi, display_image_for_review
 
 
-INPUT_FILE = Path("Analyse/IMG.tif")
-OUTPUT_FOLDER = Path("Analyse/Classical_methods/Segmentation_output")
+INPUT_FILE = Path("image.tif")
+OUTPUT_FOLDER = Path("outputs")
 SEED_CSV = OUTPUT_FOLDER / "output_seed_points.csv"
 SEED_PREVIEW = OUTPUT_FOLDER / "output_seed_points_preview.png"
 SEED_ZOOM_PREVIEW = OUTPUT_FOLDER / "output_seed_points_zoom_preview.png"
