@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Raw data and generated analysis outputs
+Analyse/
+1_BKG/
+2_REF/
+3_IMG/
+Segmentation_code_V1/
+*.tif
+*.tiff
+*.png
+*.jpg
+*.jpeg
+*.csv
+*.npy
+*.npz
+*.h5
+*.hdf5
+
+# Local acquisition / configuration files
+*.dll
+params.txt
+minimage_IMG.tif
+*_WORKFLOW_NOTES.md
+Analyse.py
+Core_V06.dll
+Correct_BF.py
+Create_Msf_Intensity_Volume.py
+Crop_Rotate_Analyse_Images.py
+Show_plt_scatter.py
+*.py
+
+# Keep repository source files trackable
+!README.md
+!requirements.txt
+!.gitignore
+!Select_Seed_Points.py
+!Segmentation_.py
